@@ -1,3 +1,12 @@
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 80px;
+}
+
 .canvas {
     width: fit-content;
     height: fit-content;
@@ -5,10 +14,19 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: none;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .tile {
     width: 80px;
     height: 80px;
     background-color: #f3f3f3;
+}
+
+#clearCanvas {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
